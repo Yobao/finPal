@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
 import Button from "@mui/material/Button";
+import { ThemeProvider } from "@mui/material";
+import theme from "./theme";
 
 export default function PersonalCosts() {
    return (
-      <>
-         <Button>I am page</Button>
-      </>
+      <ThemeProvider theme={theme}>
+         <Button>Click Personal Costs!</Button>
+      </ThemeProvider>
    );
 }
